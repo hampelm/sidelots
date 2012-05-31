@@ -67,7 +67,7 @@
           if (status == google.maps.GeocoderStatus.OK) {
             var latlng = new L.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
             var marker = new L.Marker(latlng);
-            console.log(latlng);
+            console.log(latlng); 
             map.addLayer(marker);
             map.setView(latlng, 17);
             $("#owner_address").val(address);
@@ -110,7 +110,7 @@
       
     </div>
     
-    <div class="container-fluid" id="mapbox">
+    <div class="container" id="mapbox">
       <div id="hover"></div>
       <div id="map">
       </div>
